@@ -31,7 +31,7 @@ vless 性能更加优秀，占用资源更少。
 
 **XRay 将在部署时会自动实配安装`最新版本`。**
 
-**出于安全考量，除非使用 CDN，否则请不要使用自定义域名，而使用 Heroku 分配的二级域名，以实现 XRay Websocket + TLS。**
+**出于安全考量，除非使用 CDN，否则请不要使用自定义域名，而使用 Heroku 分配的二级域名，以实现 XRay vless Websocket + TLS。**
 
 <details>
 <summary>xray</summary>
