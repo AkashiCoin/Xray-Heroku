@@ -1,4 +1,4 @@
-# 使用Heroku部署高性能代理服务，通过ws传输的vmess vless trojan shadowsocks socks等协议 
+# 使用Heroku部署Xray高性能代理服务，通过ws传输的 (vmess、vless、trojan shadowsocks、socks)等协议
 
 > 提醒： 滥用可能导致账户被BAN！！！ 
 
