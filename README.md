@@ -122,6 +122,7 @@ addEventListener(
 ## 关于CF筛选IP
 
 * 请参考 [better-cloudflare-ip](https://github.com/badafans/better-cloudflare-ip)
+* 请参考 [CloudflareSpeedTest](https://github.com/XIU2/CloudflareSpeedTest)*推荐
 
 ### 特别感谢 ：
 
