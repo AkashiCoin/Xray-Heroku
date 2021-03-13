@@ -118,6 +118,8 @@ addEventListener(
 ```
 </details>
 
+#### OpenWrt优选IP脚本自动更新 [cf-autoupdate](https://github.com/Lbingyi/cf-autoupdate) `OpenWrt推荐`
+
 > [更多来自热心网友PR的使用教程](/tutorial)
 ## 关于CF筛选IP
 
