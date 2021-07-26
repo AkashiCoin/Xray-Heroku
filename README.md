@@ -2,6 +2,9 @@
 
 > 提醒： 滥用可能导致账户被BAN！！！ 
 
+> 提醒： Heroku 已经封禁本专案，请 Fork 本专案后，将 README.md 中的 Lbingyi 替换为自己的用户名后，再进行部署。 
+>![image](https://user-images.githubusercontent.com/5351277/126950598-7930a0ac-739a-46ac-aef2-afa2d213a06c.png)
+
 ## 概述
 
 用于在 Heroku 上部署 vless+websocket+tls，每次部署自动选择最新的 alpine linux 和 Xray core 。  
