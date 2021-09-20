@@ -1,50 +1,32 @@
 :$PORT
+
 root * /usr/share/caddy
 file_server browse
 
+tls $EMAIL {
+    dns cloudflare $API_KEY
+    resolvers 8.8.4.4
+}
+
 header {
+    Permissions-Policy interest-cohort=()
+    Strict-Transport-Security max-age=31536000;
     X-Robots-Tag none
     X-Content-Type-Options nosniff
+    X-XSS-Protection "1; mode=block;"
     X-Frame-Options DENY
     Referrer-Policy no-referrer-when-downgrade
+    -Server
+    -Hidden
 }
 
-basicauth /$AUUID/* {
-    $AUUID $MYUUID-HASH
+basicauth /$ID/* {
+    $ID $MYUUID-HASH
 }
 
-@websocket_xray_vmess {
+@websocket_v2ray_vless {
 header Connection *Upgrade*
 header Upgrade    websocket
-path /$AUUID-vmess
+path /$ID-vless
 }
-reverse_proxy @websocket_xray_vmess unix//etc/caddy/vmess
-
-
-@websocket_xray_vless {
-header Connection *Upgrade*
-header Upgrade    websocket
-path /$AUUID-vless
-}
-reverse_proxy @websocket_xray_vless unix//etc/caddy/vless
-
-@websocket_xray_trojan {
-header Connection *Upgrade*
-header Upgrade    websocket
-path /$AUUID-trojan
-}
-reverse_proxy @websocket_xray_trojan unix//etc/caddy/trojan
-
-@websocket_xray_ss {
-header Connection *Upgrade*
-header Upgrade    websocket
-path /$AUUID-ss
-}
-reverse_proxy @websocket_xray_ss 127.0.0.1:4234
-
-@websocket_xray_socks {
-header Connection *Upgrade*
-header Upgrade    websocket
-path /$AUUID-socks
-}
-reverse_proxy @websocket_xray_socks 127.0.0.1:5234
+reverse_proxy @websocket_v2ray_vless unix//etc/caddy/vless
