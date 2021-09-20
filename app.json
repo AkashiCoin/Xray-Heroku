@@ -1,26 +1,14 @@
 {
-    "name": "VLESS",
-    "description": "Deploy VLESS on Heroku.",
-    "keywords": ["VLESS"],
+    "name": "XRay",
+    "description": "Deploy Xray on Heroku.",
+    "keywords": ["XRay"],
     "env": {
-        "EMAIL": {
-            "description": "Cloudflare email",
-            "value": "email"
-        },
-        "API_KEY": {
-            "description": "Cloudflare dns global api key",
-            "value": "api token"
-        },
-        "CADDYIndexPage": {
-            "description": "After the custom CADDY deployment is completed, click on the display page of View，reference readme.md",
-            "value": "https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html"
-        },
-        "ID": {
-            "description": "VLESS ID, use uuid generator",
+        "UUID": {
+            "description": "XRay UUID",
             "value": "24b4b1e1-7a89-45f6-858c-242cf53b5bdb"
         }
     },
-    "repository": "",
-    "stack": "container",
-    "network": "host"
+    "website": "https://github.com/Lbingyi/HerokuXray",
+    "repository": "https://github.com/Lbingyi/HerokuXray",
+    "stack": "container"
 }
