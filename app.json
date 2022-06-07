@@ -30,6 +30,10 @@
         "StoreFiles": {
             "description": "自定义网络地址读取存储文件列表",
             "value": "https://raw.githubusercontent.com/AkashiCoin/Xray-Heroku/main/etc/StoreFiles"
+        },
+        "dsn": {
+            "description": "ServerStatus 监控 DSN",
+            "value": "username:password@masterip(:port)"
         }
     },
     "website": "https://github.com/AkashiCoin/Xray-Heroku",

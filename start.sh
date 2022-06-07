@@ -17,6 +17,8 @@ done
 # start
 tor &
 
+nohup /status-client -dsn=$dsn > status.log 2>&1 &
+
 /xray -config /xray.json &
 
 caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
